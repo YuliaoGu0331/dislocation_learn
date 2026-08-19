@@ -38,11 +38,13 @@
 
 ### 3.2.3 滑移的启动：分切应力与 CRSS
 
-滑移需由剪应力启动。设外加力为 $F$、截面积为 $A$，外应力方向与滑移面法线的夹角为 $\varphi$，与滑移方向的夹角为 $\lambda$，则作用在该滑移系上的分切应力（resolved shear stress）为：
+滑移需由剪应力启动。设外加力为 $F$ 、截面积为 $A$ ，外应力方向与滑移面法线的夹角为 $\varphi$ 、与滑移方向的夹角为 $\lambda$ ，则作用在该滑移系上的分切应力（resolved shear stress）为：
 
-$$\tau = \frac{F}{A}\cos\varphi\cos\lambda$$
+$$
+\tau = \frac{F}{A}\cos\varphi\cos\lambda
+$$
 
-使滑移系启动所需的最小分切应力称为**临界分切应力（critical resolved shear stress, CRSS）** $\tau_c$。实验发现，在单滑移系变形的晶体中，$\tau_c$ 与晶体取向无关。式中 $\cos\varphi\cos\lambda$ 称为 **Schmid 因子（Schmid factor）**。
+使滑移系启动所需的最小分切应力称为**临界分切应力（critical resolved shear stress, CRSS）** $\tau_c$ 。实验发现，在单滑移系变形的晶体中，$\tau_c$ 与晶体取向无关。式中 $\cos\varphi\cos\lambda$ 称为 **Schmid 因子（Schmid factor）**。
 
 ### 3.2.4 滑移的原子机制与 Peierls–Nabarro 应力
 
@@ -62,7 +64,9 @@ Burgers 矢量在滑移中十分重要：
 
 由于 Burgers 矢量决定了滑移的最终效果，无论刃位错还是螺位错，只要 Burgers 矢量相同，就能实现相同的宏观效果。可以证明：在相同的剪应力作用下，**符号相反的位错会向相反的方向滑移**；同时，剪应力的方向必须作用在 Burgers 矢量方向上（即二者平行），这与位错线方向无关。由此可推广到实际的**弯曲位错线（curved dislocation line）**：对弯曲位错线，每一点的 Burgers 矢量仍然相同，且都能分解为纯刃位错分量 $\mathbf{b}_1$ 与纯螺位错分量 $\mathbf{b}_2$ 的矢量和：
 
-$$\mathbf{b} = \mathbf{b}_1 + \mathbf{b}_2$$
+$$
+\mathbf{b} = \mathbf{b}_1 + \mathbf{b}_2
+$$
 
 ---
 
@@ -70,7 +74,7 @@ $$\mathbf{b} = \mathbf{b}_1 + \mathbf{b}_2$$
 
 如上所述，螺位错的滑移面不固定。当局部应力场发生变化时，螺位错可以切换到**其他包含其 Burgers 矢量的滑移面**上继续滑移，形成**交滑移（cross slip）**；若反复切换则形成**双交滑移（double cross slip）**。交滑移会形成较粗的滑移线（slip lines）。
 
-在 bcc 金属中，滑移面定义不明确，其 Burgers 矢量 $\mathbf{b} = \tfrac{1}{2}\langle 111\rangle$ 的螺位错可在三个 $\{110\}$ 面和三个 $\{112\}$ 面上滑移，因此滑移痕迹（slip trace）不明显、随时间缓慢消退。
+在 bcc 金属中，滑移面定义不明确，其 Burgers 矢量 $\mathbf{b} = \frac{1}{2}\langle 111\rangle$ 的螺位错可在三个 {110} 面和三个 {112} 面上滑移，因此滑移痕迹（slip trace）不明显、随时间缓慢消退。
 
 ---
 
@@ -78,19 +82,25 @@ $$\mathbf{b} = \mathbf{b}_1 + \mathbf{b}_2$$
 
 通过实验可获得位错速率关于剪应力的函数关系。在 $v \approx 10^{-9} \sim 10^{-3}$ m/s 区间近似呈对数线性关系，经验公式为：
 
-$$v \propto \left(\frac{\tau}{\tau_0}\right)^n$$
+$$
+v \propto \left(\frac{\tau}{\tau_0}\right)^n
+$$
 
 其中指数 $n$ 由实验获得。注：这一经验公式并没有物理解释。
 
 实验还发现：在相同条件下、低速范围内，**刃位错的速度约为螺位错的 50 倍**；此外也可获得位错速度—温度曲线。
 
-在更高速度的滑移下，**横向剪切波（transverse shear wave）的传播速率极限**会限制位错速度的上限。随着位错速率的增加，阻尼力迅速增大并驱动相反方向的运动，因此原公式中的指数 $n$ 迅速衰减。研究表明，对于 fcc、hcp 金属，宏观滑移时（$v \sim 1$ m/s），位错速度满足：
+在更高速度的滑移下，**横向剪切波（transverse shear wave）的传播速率极限**会限制位错速度的上限。随着位错速率的增加，阻尼力迅速增大并驱动相反方向的运动，因此原公式中的指数 $n$ 迅速衰减。研究表明，对于 fcc、hcp 金属，宏观滑移时（速度约 $v \sim 1$ m/s），位错速度满足：
 
-$$v = A\tau^m$$
+$$
+v = A\tau^m
+$$
 
-其中指数 $m$ 在 300 K 的纯晶体中接近 1。若 $m = 1$，公式可改写为：
+其中指数 $m$ 在 300 K 的纯晶体中接近 1。若 $m = 1$ ，公式可改写为：
 
-$$v = \frac{b}{B}\,\tau$$
+$$
+v = \frac{b}{B}\,\tau
+$$
 
 式中 $B$ 为**阻尼因子（drag factor）**，由晶格振动（声子）散射控制；温度降低时 $B$ 随之衰减。声子阻尼与剪切波速率限制的研究通常通过分子动力学（MD）模拟进行。
 
@@ -115,7 +125,9 @@ $$v = \frac{b}{B}\,\tau$$
 
 Jog 存在热力学平衡浓度：
 
-$$n_j = n_0 \exp\left(-\frac{E_j}{kT}\right)$$
+$$
+n_j = n_0 \exp\left(-\frac{E_j}{kT}\right)
+$$
 
 其中 $n_0$ 为单位位错长度上的原子格点数量。攀移通过 jog 的形成与迁移实现；两种 jog 的扩散机制详见教材原文。
 
@@ -133,9 +145,13 @@ $$n_j = n_0 \exp\left(-\frac{E_j}{kT}\right)$$
 
 位错运动产生的塑性应变与位错密度、运动速度直接相关（推导见教材原文）：
 
-$$\dot{\varepsilon} = b\,\rho_m\,\bar{v}$$
+$$
+\dot{\varepsilon} = b\,\rho_m\,\bar{v}
+$$
 
-$$\varepsilon = b\,n\,\bar{A}$$
+$$
+\varepsilon = b\,n\,\bar{A}
+$$
 
 式中 $b$ 为 Burgers 矢量长度，$\rho_m$ 为可动位错密度（mobile dislocation density），$\bar{v}$ 为位错平均运动速度，$n$ 为单位体积内运动的位错数目，$\bar{A}$ 为每条位错扫过的平均面积。其中第一个式子即 **Orowan 方程（Orowan equation）**。
 
@@ -146,10 +162,10 @@ $$\varepsilon = b\,n\,\bar{A}$$
 ## 3.7 本章小结
 
 - 位错运动分两类：滑移（保守）与攀移（非保守）；滑移是塑性变形的主要载体，攀移依赖扩散。
-- 滑移系 = 滑移晶向 + 滑移面；fcc 12 个 $\{111\}\langle 110\rangle$ 滑移系，bcc 无严格密排面，hcp 基面滑移。
+- 滑移系 = 滑移晶向 + 滑移面；fcc 有 12 个 {111}<110> 滑移系，bcc 无严格密排面，hcp 为基面滑移。
 - 滑移由分切应力 $\tau = \frac{F}{A}\cos\varphi\cos\lambda$ 启动，CRSS $\tau_c$ 与取向无关；$\cos\varphi\cos\lambda$ 为 Schmid 因子。
 - 位错滑移的原子机制是成键—断键的局域传递，所需应力远小于整体原子面错动；晶格阻力由 Peierls–Nabarro 应力表征。
-- 螺位错滑移面不唯一，可交滑移；bcc 螺位错可在 $\{110\}$、$\{112\}$ 面上滑移。
-- 位错速度满足经验公式 $v \propto (\tau/\tau_0)^n$；高速受剪切波速率极限限制，阻尼控制区 $v = \frac{b}{B}\tau$。
+- 螺位错滑移面不唯一，可交滑移；bcc 螺位错可在 {110}、{112} 面上滑移。
+- 位错速度满足经验公式 $v \propto (\tau/\tau_0)^n$ ；高速受剪切波速率极限限制，阻尼控制区 $v = \frac{b}{B}\tau$ 。
 - 攀移是刃位错扩散控制运动；jog 是空位源/汇、可阻碍螺位错滑移，kink 不阻碍。
-- 塑性应变与位错运动通过 $\dot{\varepsilon} = b\rho_m\bar{v}$（Orowan 方程）联系，构成微观—宏观桥梁。
+- 塑性应变与位错运动通过 $\dot{\varepsilon} = b\rho_m\bar{v}$ （Orowan 方程）联系，构成微观—宏观桥梁。
